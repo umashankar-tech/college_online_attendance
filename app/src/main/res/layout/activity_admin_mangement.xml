@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/facultyCreation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8EFFA"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".AdminMangement">
+
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="121dp"
+        android:layout_height="115dp"
+        app:srcCompat="@drawable/adminlogo" />
+
+
+    <TextView
+
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:layout_marginLeft="12dp"
+        android:textColor="#772A24"
+        android:text="Admin Management" />
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/admin_gradient_color"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <Button
+            android:id="@+id/batches"
+            android:layout_marginTop="30dp"
+            android:textColor="#FFFEFE"
+            android:layout_width="260dp"
+            android:backgroundTint="#401847"
+            android:layout_height="wrap_content"
+            android:onClick="gotoAddFaculty"
+            android:text="Add Batches " />
+
+        <Button
+            android:id="@+id/teacher"
+            android:textColor="#FFFEFE"
+            android:layout_marginTop="14dp"
+            android:backgroundTint="#401847"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:onClick="goToTeacherCreation"
+            android:text="Add Teachers" />
+        <Button
+            android:id="@+id/subject"
+            android:layout_marginTop="14dp"
+            android:backgroundTint="#401847"
+            android:textColor="#FFFEFE"
+            android:layout_width="260dp"
+            android:onClick="goToAddSubjects"
+            android:layout_height="wrap_content"
+            android:text="Add Subjects" />
+
+        <Button
+            android:id="@+id/student"
+            android:layout_marginTop="14dp"
+            android:layout_width="260dp"
+            android:textColor="#FFFEFE"
+            android:backgroundTint="#401847"
+            android:layout_height="wrap_content"
+            android:onClick="goToAddStudent"
+            android:layout_marginBottom="30dp"
+            android:text="Add Student" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:paddingLeft="20dp"
+                android:textStyle="bold"
+                android:background="#FFFBFB"
+                android:onClick="logoutFromAdminManegement"
+                android:textSize="20dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/black"
+                android:paddingRight="20dp"
+                android:layout_height="wrap_content"
+                android:text="LogOut" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

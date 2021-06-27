@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#B5E7ED"
+    android:layout_gravity="center"
+    tools:context=".studentpart.StudentSubjectListToGetAttPer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/att_attendance_name_gradient"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="117dp"
+            android:onClick="gotoViewAttBySubjects"
+            android:layout_height="116dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/attchecklist"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="#630D0D"
+            android:text="Enter The RollNo:" />
+
+        <EditText
+            android:id="@+id/getRollno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter THe RoLLNo"
+            android:textSize="22dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="40dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"
+            android:background="#FDFCFC"></EditText>
+
+        <TextView
+            android:id="@+id/attlistBySubjects"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:onClick="gotoViewAttBySubjects"
+            android:paddingTop="3dp"
+            android:paddingBottom="7dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_corner_radius"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:text="View Attendance" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:background="@color/black"
+            android:layout_marginTop="30dp"
+            android:layout_height="2dp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="117dp"
+            android:layout_marginTop="30dp"
+            android:onClick="gotoDownloadPdf1"
+            android:layout_height="116dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_baseline_file_download_24"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/downloadpdf"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="7dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_corner_radius"
+            android:textSize="20dp"
+            android:layout_marginBottom="30dp"
+            android:onClick="gotoDownloadPdf1"
+            android:textColor="@color/black"
+            android:text="Download Or View Pdf" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E4E1E1"
+    android:layout_gravity="center"
+    tools:context=".PageToTeacherLogin">
+
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textColor="#FFFDFD"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:paddingRight="10dp"
+        android:background="#2D145A"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="SELECT YOUR WAY" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/addstudentbackground_gradient"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+       >
+
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:onClick="goToStream"
+            app:srcCompat="@drawable/attchecklogo"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:onClick="goToStream"
+            android:text="Attendance Page Viewer"
+            android:textColor="#1F2A63"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:onClick="gotoUploadPdfPage"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/filevector"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+           android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:onClick="gotoUploadPdfPage"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:textSize="20dp"
+            android:text="Go To Files upload" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:paddingRight="20dp"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+
+        android:onClick="teacheLogout"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="@color/black"
+        android:textColor="#FBF8F8"
+        >
+
+    </TextView>
+</LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
